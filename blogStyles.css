@@ -1,0 +1,240 @@
+font-face {
+  font-family: 'Chiron GoRound TC';
+  src: url('https://fonts.cdnfonts.com/s/17513/ChironGoRoundTC.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span, div {
+  font-family: 'Chiron GoRound TC', Arial, Helvetica, sans-serif !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #283D8F;
+  color: #333;
+  padding-top: 70px;
+}
+
+/* HEADER */
+header {
+  background: #E3E2F0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E3E2F0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .header-left {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0072ff;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #2A3075, #2A3075);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* BLOG */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 40px;
+  gap: 20px;
+}
+
+.card {
+  background: #E3E2F0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.card p {
+  margin: 0 20px 20px;
+  color: #555;
+}
+
+.card a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #0072ff;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #E3E2F0;
+  border-top: 1px solid #eee;
+}
+
+
+.menu-btn {
+  --primary-color: #CFDA64;
+  --secondary-color: #2A3075;
+  --border-color: #000;
+  background-color: var(--primary-color);
+  border: 2px solid var(--border-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transform: translate(-50%, 0) scale(0);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn:hover::before {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.menu-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transform: translate(-50%, 0) scale(0);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn:hover::before {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.menu-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content {
+  margin-top: 10px;
+  margin-right: 2.3em;
+  display: none;
+  position: absolute;
+  background-color: #CFDA64;
+  min-width: 160px;
+  right: 40px;
+  top: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #283D8F;
+  color: white;
+  border-radius: 8px;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+

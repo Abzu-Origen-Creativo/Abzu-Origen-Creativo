@@ -957,3 +957,469 @@ button {
   margin-bottom: 10px;
   line-height: 1.6;
 }
+
+/* ===== MEDIA QUERIES RESPONSIVE PARA MÓVILES ===== */
+
+/* Tablets y dispositivos medianos (768px y menos) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+
+  #main-header {
+    padding: 12px 20px;
+  }
+
+  .header-left {
+    font-size: 1.3rem;
+  }
+
+  .header-left img {
+    height: 45px !important;
+    margin-right: 8px !important;
+  }
+
+  .parent {
+    gap: 5px;
+    right: -5px;
+  }
+
+  .child {
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+  }
+
+  /* Hero dividido - cambia a columnas */
+  .hero-dividido {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 30px;
+  }
+
+  .hero-izquierda,
+  .hero-derecha {
+    flex: 1;
+    align-items: center;
+  }
+
+  .hero-izquierda h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .texto-entrada {
+    font-size: 2.5rem;
+  }
+
+  .imagenes-chicas {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .imagenes-chicas img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .wrapper {
+    min-height: 300px;
+  }
+
+  .inner {
+    --w: 80px;
+    --h: 120px;
+    --translateZ: calc((var(--w) + var(--h)) + 0px);
+  }
+
+  .card {
+    width: 80px;
+    height: 120px;
+  }
+
+  /* Servicios - ajusta el ancho */
+  .servicio {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .servicio, .miembro {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .servicios-container,
+  .equipo-container {
+    gap: 20px;
+  }
+
+  /* Portafolio */
+  .portafolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  /* Contacto */
+  #contacto h2 {
+    font-size: 2.5rem;
+  }
+
+  .contacto-info p {
+    font-size: 1rem;
+  }
+
+  /* Botones */
+  .menu-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .animated-button {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  /* Tono de comunicación */
+  .tono-comunicacion {
+    padding: 40px 15px;
+    margin: 40px 10px;
+  }
+
+  .tono-comunicacion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .tabla-tono {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .columna {
+    flex: 1 1 100%;
+  }
+
+  /* Nosotros */
+  .nosotros {
+    padding: 2rem 1rem;
+  }
+
+  .nosotros h2 {
+    font-size: 2rem;
+  }
+
+  .texto-nosotros {
+    font-size: 0.95rem;
+  }
+
+  /* Dropdown */
+  .dropdown-content {
+    margin-top: 8rem;
+    min-width: 140px;
+  }
+
+  .dropdown-content a {
+    padding: 10px 12px;
+  }
+
+  /* Cards de equipo */
+  .cardh {
+    width: 160px;
+    height: 210px;
+  }
+
+  /* Separador */
+  .separador {
+    width: 90%;
+  }
+}
+
+/* Móviles pequeños (480px y menos) */
+@media (max-width: 480px) {
+  body {
+    padding-top: 55px;
+  }
+
+  #main-header {
+    padding: 10px 15px;
+  }
+
+  .header-left {
+    font-size: 1rem;
+  }
+
+  .header-left img {
+    height: 35px !important;
+    margin-right: 5px !important;
+  }
+
+  .parent {
+    right: 0;
+  }
+
+  .child {
+    width: 35px;
+    height: 35px;
+    margin: 0 2px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  /* Hero */
+  .hero-dividido {
+    padding: 40px 15px;
+    gap: 20px;
+  }
+
+  .hero-izquierda h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .texto-entrada {
+    font-size: 1.8rem;
+  }
+
+  .imagenes-chicas img {
+    width: 150px;
+    height: 120px;
+  }
+
+  .wrapper {
+    min-height: 250px;
+  }
+
+  .inner {
+    --w: 60px;
+    --h: 90px;
+  }
+
+  .card {
+    width: 60px;
+    height: 90px;
+  }
+
+  /* Servicios */
+  .servicio {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .servicio, .miembro {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .servicios-container,
+  .equipo-container {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .servicio-img {
+    width: 150px;
+    height: 120px;
+  }
+
+  /* Portafolio */
+  .portafolio-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Contacto */
+  #contacto {
+    padding: 40px 15px;
+  }
+
+  #contacto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .contacto-info {
+    padding: 15px;
+    margin-top: 25px;
+  }
+
+  .contacto-info p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+
+  /* Botones */
+  .menu-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .animated-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  /* Tono */
+  .tono-comunicacion {
+    padding: 30px 12px;
+    margin: 30px 5px;
+    border-radius: 15px;
+  }
+
+  .tono-comunicacion h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .columna {
+    padding: 15px;
+  }
+
+  .columna h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .columna ul {
+    font-size: 0.85rem;
+  }
+
+  .columna li {
+    margin-bottom: 8px;
+  }
+
+  /* Nosotros */
+  .nosotros {
+    padding: 1.5rem 1rem;
+  }
+
+  .nosotros h2 {
+    font-size: 1.5rem;
+  }
+
+  .texto-nosotros {
+    font-size: 0.9rem;
+  }
+
+  /* Cards */
+  .cardh {
+    width: 140px;
+    height: 180px;
+  }
+
+  .cardh::before {
+    font-size: 0.65em;
+    bottom: 5px;
+    left: 10px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 15px 10px;
+    font-size: 0.8rem;
+  }
+
+  /* Dropdown */
+  .dropdown-content {
+    margin-top: 7rem;
+    min-width: 120px;
+    margin-right: 0;
+  }
+
+  .dropdown-content a {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Separador */
+  .separador {
+    width: 95%;
+    margin: 40px 0 30px 0;
+  }
+
+  /* Cube */
+  .cube-container {
+    width: 120px;
+    height: 120px;
+    margin: 30px auto;
+  }
+
+  .cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .face {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 12px;
+  }
+
+  .front {
+    transform: translateZ(60px);
+  }
+
+  .back {
+    transform: rotateY(180deg) translateZ(60px);
+  }
+
+  .right {
+    transform: rotateY(90deg) translateZ(60px);
+  }
+
+  .left {
+    transform: rotateY(-90deg) translateZ(60px);
+  }
+
+  .top {
+    transform: rotateX(90deg) translateZ(60px);
+  }
+
+  .bottom {
+    transform: rotateX(-90deg) translateZ(60px);
+  }
+
+  /* Animaciones más rápidas en móvil */
+  .animated-button,
+  .servicio,
+  .fade-on-scroll {
+    transition-duration: 0.2s !important;
+  }
+}
+
+/* Ultra móviles (320px - 375px) */
+@media (max-width: 375px) {
+  .texto-entrada {
+    font-size: 1.5rem;
+  }
+
+  .hero-izquierda h2 {
+    font-size: 1.1rem;
+  }
+
+  .imagenes-chicas img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .servicio {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  #contacto h2 {
+    font-size: 1.5rem;
+  }
+
+  .tono-comunicacion h2 {
+    font-size: 1.2rem;
+  }
+
+  .menu-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}
